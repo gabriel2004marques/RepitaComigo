@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De-24-a-42</title>
+</head>
+
+<body>
+
+    <script>
+
+        var de24a42 = [];
+
+        for(var loop = 0; loop < 10; loop++) {
+            var numero = parseInt(prompt("Digite um número : "))
+            if(numero >= 24 || numero <= 42) {
+                de24a42.push(numero);
+            }
+        }
+
+        document.write("Dentre os números informados estão entre 24 e 42 os números : "+de24a42)
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Médias</title>
+    <link rel = "stylesheet" href = "Styles.css">
+
+</head>
+
+<body>
+
+    <script>
+
+        var nota1 = parseFloat(prompt("Nota do aluno em português : "));
+        var nota2 = parseFloat(prompt("Nota do aluno em matemática : "));
+        var media = 0;
+        var count = 0;
+
+        media = (nota1 + nota2) / 2;
+
+        if(media >= 9.5) {
+            count++;
+        }
+
+        var destinoFinal = prompt("Deseja calcular a média de outro aluno ? (Digite (s) para sim e (n) para não)");
+
+        while (destinoFinal == "s") {
+            nota1 = parseFloat(prompt("Nota do aluno em Português : "));
+            nota2 = parseFloat(prompt("Nota do aluno em Matemática : "));
+            média = (nota1 + nota2) / 2;
+
+        if (média >= 9.5) {
+            count++;
+        }
+
+        destinoFinal = prompt("Deseja calcular a média de outro aluno ? (Digite (s) para sim e (n) para não)");
+    }
+
+        alert("Um total de "+count+" alunos foram aprovados")
+        document.write("Fim")
+
+    </script>
+    
+</body>
+</html>

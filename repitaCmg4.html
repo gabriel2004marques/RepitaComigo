@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Média-Aritimética</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        function pergunta_gg () {
+
+            function sair () {
+            window.close();
+        }
+
+        var pergunta = prompt("Eae usuário , tudo bem ? (Digite 1 para sim e 2 para não)")
+
+        if(pergunta == 1) {
+            alert("Muito bom saber disso ! Agora vamos saber qual é a média aritimética entre 15 a 100?")
+            inicio ();
+        } else if(pergunta == 2) {
+            alert("Uma pena saber disso , volte quando estiver se sentindo melhor")
+            sair ();
+        } else if(pergunta < 1 && pergunta > 2) {
+            alert("Por favor utilize apenas os números 1 ou 2")
+            pergunta_gg ();
+        }
+    }
+
+        function inicio () {
+
+        var soma = 0;
+        var contagem = 14;
+
+        for(var loop = 0; loop < 86; loop++) {
+            if (contagem => 15 && contagem <= 100) {
+                contagem++;
+                soma = soma + contagem
+                console.log(contagem);
+            }
+        }
+
+        var media = soma / 85;
+        document.write("A média aritimética dos números de 15 a 100 é : "+media.toFixed(2))
+    }
+
+    pergunta_gg();
+
+    </script>
+    
+</body>
+
+</html>

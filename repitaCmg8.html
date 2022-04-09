@@ -1,0 +1,36 @@
+<html>
+
+     <head>
+	    <title>Apenas-um-teste</title>
+        <link rel = "stylesheet" href = "styles.css">
+	 </head>
+	 
+	 <body>
+	 
+	    <script>
+
+            var nome = prompt("Qual o nome do aluno ?");
+            function inicio () {
+            var n1 = parseFloat(prompt("Nota do aluno em matemática : "));
+            var n2 = parseFloat(prompt("Nota do aluno em português : "));
+            var media = (n1 + n2) / 2;
+
+            if (n1 >= 0 && n1 <= 10 && n2 >= 0 && n2 <= 10) {
+                alert("A nota final do aluno "+nome+" , é : "+media)
+            } else if (n1 < 0 || n1 > 10) {
+                alert("Por favor informe um número entre 0 e 10")
+                inicio ();
+            } 
+            if (n2 < 0 || n2 > 10) {
+                alert("Por favor informe um número entre 0 e 10")
+                inicio ();
+            }
+        }
+
+        inicio ();
+         
+        </script>
+
+    </body>
+
+</html>
